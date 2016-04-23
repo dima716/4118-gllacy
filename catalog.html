@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: </title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <a class="logo__link" href="#">
+            <img class="logo__image" src="http://placehold.it/155x64" width="155" height="64" alt="Глейси">
+          </a>
+        </div>
+        <nav class="main-navigation">
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link menu__link_active" href="#">Каталог</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">О Компании</a></li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <div class="search">
+            <a class="button button_type_search button_style_secondary" href="#">поиск</a>
+            <form class="search__form" action="#" method="get">
+              <input class="search__input" type="search" name="search">
+            </form>
+          </div>
+          <div class="login">
+            <a class="button button_type_login button_style_secondary" href="#">вход</a>
+            <form class="login__form" action="#" method="post">
+              <input class="login__input" type="email" placeholder="Электронная почта">
+              <input class="login__input" type="password" placeholder="Пароль">
+              <button class="button button_style_primary" type="submit">Войти</button>
+              <div class="login__actions">
+                <a class="login__link" href="#">Забыли пароль?</a>
+                <a class="login__link" href="#">Новая регистрация</a>
+              </div>
+            </form>
+          </div>
+          <div class="cart cart_filled">
+            <a class="button button_type_cart button_style_secondary" href="#">2 товара</a>
+            <div class="order">
+              <table class="order-table">
+                <tr class="order-table__row">
+                  <td class="order-table__cell">
+                    <button class="order__delete" type="button">&times;</button>
+                  </td>
+                  <td class="order-table__cell">
+                    <img class="order__image" src="http://placehold.it/33x33" width="33" height="33" alt="Пломбир с апельсиновым мороженым">
+                  </td>
+                  <td class="order-table__cell order__title">Пломбир с апельсиновым мороженым</td>
+                  <td class="order-table__cell order__amount">
+                    1,5 кг &times;
+                    <span class="order__price order__price_style_amount">200 руб.</span>
+                  </td>
+                  <td class="order-table__cell order__price">300 руб.</td>
+                </tr>
+                <tr class="order-table__row">
+                  <td class="order-table__cell">
+                    <button class="order__delete" type="button">&times;</button>
+                  </td>
+                  <td class="order-table__cell">
+                    <img class="order__image" src="http://placehold.it/33x33" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                  </td>
+                  <td class="order-table__cell order__title">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="order-table__cell order__amount">
+                    1,5 кг &times;
+                    <span class="order__price">300 руб.</span>
+                  </td>
+                  <td class="order-table__cell order__price">450 руб.</td>
+                </tr>
+              </table>
+              <span class="order__total-price">Итого: 750 руб.</span>
+              <div class="order__button">
+                <a class="button button_style_primary" href="#">Оформить заказ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-contacts">
+          <span class="header-contacts__time">C <time datetime="10:00">10</time> до <time datetime="20:00">20</time>, ежедневно</span>
+          <a class="header-contacts__phone" href="tel:+78124592525">8 812 450-25-25</a>
+        </div>
+      </div>
+    </header>
+    <main class="catalog-content">
+      <div class="container">
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <section class="social">
+          <ul class="social-buttons">
+            <li class="social-buttons__item"><a class="social-buttons__link social-buttons__link_type_twitter" href="#">twitter</a></li>
+            <li class="social-buttons__item"><a class="social-buttons__link social-buttons__link_type_instagram" href="#">instagram</a></li>
+            <li class="social-buttons__item"><a class="social-buttons__link social-buttons__link_type_facebook" href="#">facebook</a></li>
+            <li class="social-buttons__item"><a class="social-buttons__link social-buttons__link_type_vk" href="#">vk</a></li>
+          </ul>
+        </section>
+        <section class="footer-menu">
+          <ul class="footer-menu-list">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Для поставщиков</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Наши документы</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">О производстве</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Экологические стандарты</a></li>
+          </ul>
+        </section>
+        <section class="copyright">
+          <a class="copyright__logo" href="https://htmlacademy.ru">
+            <img class="copyright__logo-image" src="http://placehold.it/108x38" width="108" height="38" alt="HTML Academy">
+          </a>
+          <div class="copyright__text">Сделано в <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a> &copy; 2016</div>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

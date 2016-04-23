@@ -86,6 +86,88 @@
     </header>
     <main class="catalog-content">
       <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог</a></li>
+          <li class="breadcrumbs__item breadcrumbs__item_active"><a href="#" class="breadcrumbs__link">Сливочное</a></li>
+        </ul>
+         <h1 class="title title__catalog-content title_level_primary">Сливочное мороженое</h1>
+         <div class="filters">
+           <form class="filters-form" action="#" method="get">
+             <div class="filters__item sort-filter">
+                <span class="sort-filter__title filters__title">Сортировка:</span>
+                <div class="filters__inner">
+                  <select class="select" name="sort-filter">
+                    <option value="popularity">по популярности</option>
+                    <option value="popularity">по популярности</option>
+                    <option value="popularity">по популярности</option>
+                </select>
+                </div>
+             </div>
+             <div class="filters__item range-filter">
+               <div class="range-filter__title filters__title">
+                  Цена:
+                  <input class="range-filter__input range-filter__input_type_from" type="text" name="price-from" value="100 руб."> -
+                  <input class="range-filter__input range-filter__input_type_to" type="text" name="price-to" value="500 руб.">
+               </div>
+               <div class="filters__inner">
+                  <div class="range">
+                   <div class="range__line">
+                     <div class="range__lever range__lever_type_left"></div>
+                     <div class="range__lever range__lever_type_right"></div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="filters__item radio-filter">
+               <span class="radio-filter__title filters__title">Жирность:</span>
+                <div class="filters__inner">
+                  <div class="radio-filter__item">
+                    <input class="radio-filter__input" type="radio" name="Fat" value="0" id="fat-0">
+                    <label class="radio-filter__label" for="fat-0">0%</label>
+                  </div>
+                  <div class="radio-filter__item">
+                    <input class="radio-filter__input" type="radio" name="Fat" value="before-10" id="fat-before-10" checked>
+                    <label class="radio-filter__label" for="fat-before-10">до 10%</label>
+                  </div>
+                  <div class="radio-filter__item">
+                    <input class="radio-filter__input" type="radio" name="Fat" value="before-30" id="fat-before-30">
+                    <label class="radio-filter__label" for="fat-before-30">до 30%</label>
+                  </div>
+                  <div class="radio-filter__item">
+                    <input class="radio-filter__input" type="radio" name="Fat" value="after-30" id="fat-after-30">
+                    <label class="radio-filter__label" for="fat-after-30">выше 30%</label>
+                  </div>
+                </div>
+             </div>
+             <div class="filters__item checkbox-filter">
+               <span class="checkbox-filter__title filters__title">Наполнители:</span>
+               <div class="filters__inner">
+                  <div class="checkbox-filter__item">
+                    <input class="checkbox-filter__input" type="checkbox" name="chocolate" id="chocolate" checked>
+                    <label class="checkbox-filter__label" for="chocolate">шоколадные</label>
+                  </div>
+                  <div class="checkbox-filter__item">
+                    <input class="checkbox-filter__input" type="checkbox" name="sugar-topping" id="sugar-topping" checked>
+                    <label class="checkbox-filter__label" for="sugar-topping">сахарные присыпки</label>
+                  </div>
+                  <div class="checkbox-filter__item">
+                    <input class="checkbox-filter__input" type="checkbox" name="fruits" id="fruits">
+                    <label class="checkbox-filter__label" for="fruits">фрукты</label>
+                  </div>
+                  <div class="checkbox-filter__item">
+                    <input class="checkbox-filter__input" type="checkbox" name="syrups" id="syrups">
+                    <label class="checkbox-filter__label" for="syrups">сиропы</label>
+                  </div>
+                  <div class="checkbox-filter__item">
+                    <input class="checkbox-filter__input" type="checkbox" name="jams" id="jams">
+                    <label class="checkbox-filter__label" for="jams">джемы</label>
+                  </div>
+               </div>
+             </div>
+             <button class="button button_style_secondary button__filters-form">Применить</button>
+           </form>
+         </div>
       </div>
     </main>
     <footer class="main-footer">

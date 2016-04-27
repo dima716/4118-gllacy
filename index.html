@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
         <div class="logo">
-          <img class="logo__image" src="http://placehold.it/155x64" width="155" height="64" alt="Глейси">
+          <img class="logo__image" src="img/logo.svg" width="153" height="63" alt="Глейси">
         </div>
         <nav class="main-navigation">
           <ul class="menu">
@@ -16,7 +17,7 @@
               <a class="menu__link" href="#">Каталог</a>
               <ul class="sub-menu">
                 <li class="sub-menu__item"><a class="sub-menu__link sub-menu__link_type_new" href="#">Новинки</a></li>
-                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Сливочное</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="catalog.html">Сливочное</a></li>
                 <li class="sub-menu__item"><a class="sub-menu__link" href="#">Щербеты</a></li>
                 <li class="sub-menu__item"><a class="sub-menu__link" href="#">Фруктовый лед</a></li>
                 <li class="sub-menu__item"><a class="sub-menu__link" href="#">Мелорин</a></li>
@@ -24,23 +25,9 @@
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">Доставка и оплата</a>
-              <ul class="sub-menu">
-                <li class="sub-menu__item"><a class="sub-menu__link sub-menu__link_type_new" href="#">Новинки</a></li>
-                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Сливочное</a></li>
-                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Щербеты</a></li>
-                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Фруктовый лед</a></li>
-                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Мелорин</a></li>
-              </ul>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">О Компании</a>
-              <ul class="sub-menu">
-                <li class="sub-menu__item"><a class="sub-menu__link sub-menu__link_type_new" href="#">Новинки</a></li>
-                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Сливочное</a></li>
-                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Щербеты</a></li>
-                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Фруктовый лед</a></li>
-                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Мелорин</a></li>
-              </ul>
             </li>
           </ul>
         </nav>
@@ -71,8 +58,8 @@
                   <td class="order-table__cell">
                     <button class="order__delete" type="button">&times;</button>
                   </td>
-                  <td class="order-table__cell">
-                    <img class="order__image" src="http://placehold.it/33x33" width="33" height="33" alt="Пломбир с апельсиновым мороженым">
+                  <td class="order-table__cell order__image-wrapper">
+                    <img class="order__image" src="img/catalog-item-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым мороженым">
                   </td>
                   <td class="order-table__cell order__title">Пломбир с апельсиновым мороженым</td>
                   <td class="order-table__cell order__amount">
@@ -85,8 +72,8 @@
                   <td class="order-table__cell">
                     <button class="order__delete" type="button">&times;</button>
                   </td>
-                  <td class="order-table__cell">
-                    <img class="order__image" src="http://placehold.it/33x33" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                  <td class="order-table__cell order__image-wrapper">
+                    <img class="order__image" src="img/catalog-item-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
                   </td>
                   <td class="order-table__cell order__title">Клубничный пломбир с присыпкой из белого шоколада</td>
                   <td class="order-table__cell order__amount">
@@ -116,18 +103,18 @@
         <div class="slider">
           <ul class="slider__list">
             <li class="slider__item">
-              <img class="slider__image" src="http://placehold.it/705x584" width="705" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
-              <h2 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h2>
+              <img class="slider__image" src="img/slider-item.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
+              <h1 class="title title_level_primary slider__title">Крем-брюле и пломбир с малиновым джемом</h1>
               <a class="button button_style_primary slider__button" href="#">Давайте оба!</a>
             </li>
             <li class="slider__item">
-              <img class="slider__image" src="http://placehold.it/705x584" width="705" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
-              <h2 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h2>
+              <img class="slider__image" src="img/slider-item.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
+              <h1 class="title title_level_primary slider__title">Крем-брюле и пломбир с малиновым джемом</h1>
               <a class="button button_style_primary slider__button" href="#">Давайте оба!</a>
             </li>
             <li class="slider__item">
-              <img class="slider__image" src="http://placehold.it/705x584" width="705" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
-              <h2 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h2>
+              <img class="slider__image" src="img/slider-item.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
+              <h1 class="title title_level_primary slider__title">Крем-брюле и пломбир с малиновым джемом</h1>
               <a class="button button_style_primary slider__button" href="#">Давайте оба!</a>
             </li>
           </ul>
@@ -139,18 +126,30 @@
         </div>
         <div class="promo">
           <div class="promo__item">
-            <img class="promo__image" src="http://placehold.it/561x230" width="561" height="230" alt="Малинка даром!">
+            <div class="promo__image-wrapper">
+              <img class="promo__image"
+                   src="img/promo-item-1.jpg"
+                   width="560"
+                   height="229"
+                   alt="Малинка даром!">
+            </div>
             <p class="promo__text">
-              <b class="promo__slogan">Малинка даром</b>
+              <b class="title title_level_secondary promo__slogan">Малинка даром</b>
               При покупке 2 кг любого фруктового мороженого,
               добавим в ваш заказ банку малинового варенья бесплатно.
             </p>
             <a class="button button_style_primary button__promo" href="#">Хочу варенье!</a>
           </div>
           <div class="promo__item">
-            <img class="promo__image" src="http://placehold.it/561x230" width="561" height="230" alt="Шоколадки даром!">
+            <div class="promo__image-wrapper">
+              <img class="promo__image"
+                   src="img/promo-item-2.jpg"
+                   width="560"
+                   height="229"
+                   alt="Шоколадки даром!">
+            </div>
             <p class="promo__text">
-              <b class="promo__slogan">Шоколадки даром!</b>
+              <b class="title title_level_secondary promo__slogan">Шоколадки даром!</b>
               При покупке 2 кг пломбира, добавим в ваш заказ упаковку
               вкуснейшей шоколадной присыпки совершенно бесплатно.
             </p>
@@ -160,60 +159,69 @@
         <div class="products">
           <div class="products__item">
             <span class="products__mark">хит</span>
-            <img class="products__image"
-                 src="http://placehold.it/267x267"
-                 width="267"
-                 height="267"
-                 alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <div class="products__image-wrapper">
+              <img class="products__image"
+                   src="img/catalog-item-1.jpg"
+                   width="267"
+                   height="267"
+                   alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            </div>
             <div class="products__price">
               <span class="products__price-number">310 &#8381;</span>/кг
             </div>
-            <h2 class="products__title">
+            <h2 class="title title_level_ternary products__title">
               <a class="products__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </h2>
             <a class="button button_style_primary products__button" href="#">Быстрый просмотр</a>
           </div>
           <div class="products__item">
             <span class="products__mark">хит</span>
-            <img class="products__image"
-                 src="http://placehold.it/267x267"
-                 width="267"
-                 height="267"
-                 alt="Сливочно-кофейное с кусочками шоколада">
+            <div class="products__image-wrapper">
+              <img class="products__image"
+                   src="img/catalog-item-2.jpg"
+                   width="267"
+                   height="267"
+                   alt="Сливочно-кофейное с кусочками шоколада">
+            </div>
             <div class="products__price">
               <span class="products__price-number">380 &#8381;</span>/кг
             </div>
-            <h2 class="products__title">
+            <h2 class="title title_level_ternary products__title">
               <a class="products__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
             </h2>
             <a class="button button_style_primary products__button" href="#">Быстрый просмотр</a>
           </div>
           <div class="products__item">
             <span class="products__mark">хит</span>
-            <img class="products__image"
-                 src="http://placehold.it/267x267"
-                 width="267"
-                 height="267"
-                 alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <div class="products__image-wrapper">
+              <img class="products__image"
+                   src="img/catalog-item-3.jpg"
+                   width="267"
+                   height="267"
+                   alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            </div>
             <div class="products__price">
               <span class="products__price-number">355 &#8381;</span>/кг
             </div>
-            <h2 class="products__title">
+            <h2 class="title title_level_ternary products__title">
               <a class="products__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </h2>
             <a class="button button_style_primary products__button" href="#">Быстрый просмотр</a>
           </div>
           <div class="products__item">
             <span class="products__mark">хит</span>
+            <div class="products__image-wrapper">
+
+            </div>
             <img class="products__image"
-                 src="http://placehold.it/267x267"
+                 src="img/catalog-item-4.jpg"
                  width="267"
                  height="267"
                  alt="Сливочное крем-брюле с карамельной подливкой">
             <div class="products__price">
               <span class="products__price-number">415 &#8381;</span>/кг
             </div>
-            <h2 class="products__title">
+            <h2 class="title title_level_ternary products__title">
               <a class="products__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
             </h2>
             <a class="button button_style_primary products__button" href="#">Быстрый просмотр</a>
@@ -266,7 +274,7 @@
           </div>
         </div>
         <div class="location">
-          <img class="map" src="http://placehold.it/1250x430" width="1250" height="430" alt="Карта">
+          <img class="map" src="img/map.jpg" width="1200" height="430" alt="Карта">
           <div class="contacts">
             <p class="contacts__address">
               Адрес главного офиса и офлайн магазина
@@ -302,7 +310,7 @@
         </section>
         <section class="copyright">
           <a class="copyright__logo" href="https://htmlacademy.ru">
-            <img class="copyright__logo-image" src="http://placehold.it/108x38" width="108" height="38" alt="HTML Academy">
+            <img class="copyright__logo-image" src="img/copyright-logo.svg" width="108" height="36" alt="HTML Academy">
           </a>
           <div class="copyright__text">Сделано в <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a> &copy; 2016</div>
         </section>

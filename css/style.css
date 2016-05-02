@@ -42,6 +42,11 @@ body {
   clear: both;
 }
 
+.button {
+  background-color: #ec593c;
+  color: #fff;
+}
+
 /* HEADER */
 .logo {
   float: left;
@@ -97,3 +102,409 @@ body {
 .cart {
   display: inline-block;
 }
+/* /HEADER */
+
+/* INDEX-CONTENT */
+.slider {
+  position: relative;
+  text-align: center;
+}
+
+.slider__list {
+  // width: 647px;
+  // min-height: 584px;
+  // overflow-x: hidden;
+
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+
+  outline: 1px dotted #CC3333;
+}
+
+.slider__item {
+  display: none;
+  position: relative;
+  min-height: 584px;
+  border: 1px solid transparent; // prevent margin collapsing
+}
+
+.slider__item_active {
+  display: block;
+}
+
+.slider__image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -323px;
+  z-index: -1;
+
+  outline: 1px dotted #CC3333;
+}
+
+.slider__title {
+  margin-top: 313px;
+  margin-bottom: 40px;
+
+  outline: 1px dotted #CC3333;
+}
+
+.slider-boolets {
+  position: absolute;
+  left: 0;
+  bottom: 80px;
+
+  outline: 1px dotted #CC3333;
+}
+
+.slider__button {
+  outline: 1px dotted #CC3333;
+}
+
+.promo {
+  margin-top: -20px;
+  margin-bottom: 40px;
+
+  outline: 1px dotted #FFCC33;
+}
+
+.promo:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.promo__item {
+  float: left;
+  position: relative;
+
+  width: 520px;
+  margin-right: 26px;
+  padding: 0 20px;
+
+  min-height: 229px;
+
+  outline: 1px dotted #FFCC33;
+}
+
+.promo__item:last-child {
+  margin-right: 0;
+}
+
+.promo__image-wrapper {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.promo__image {
+  min-height: 100%;
+}
+
+.promo__slogan {
+  display: block;
+  margin-top: 17px;
+  margin-bottom: 23px;
+
+  outline: 1px dotted #FFCC33;
+}
+
+.promo__text {
+  margin-bottom: 46px;
+
+  outline: 1px dotted #FFCC33;
+}
+
+.promo__actions {
+  text-align: right;
+
+  outline: 1px dotted #FFCC33;
+}
+
+.products {
+  font-size: 0;
+  margin-bottom: 37px;
+
+  outline: 1px solid #008AB8;
+}
+
+.products__item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 267px;
+  margin-right: 26px;
+  font-size: 16px;
+
+  outline: 1px solid #008AB8;
+}
+
+.products__item:last-child {
+  margin-right: 0;
+}
+
+.products__image-wrapper {
+  width: 267px;
+  height: 267px;
+  border-radius: 100%;
+  overflow: hidden;
+
+  outline: 1px solid #008AB8;
+}
+
+.products__mark {
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 100%;
+  line-height: 61px;
+  text-align: center;
+  text-transform: uppercase;
+
+  outline: 1px solid #008AB8;
+}
+
+.products__price {
+  position: absolute;
+  left: 0;
+  top: 220px;
+  font-size: 30px;
+
+  outline: 1px solid #008AB8;
+}
+
+.products__price-number {
+  font-size: 45px;
+}
+
+.products__title {
+  text-align: center;
+
+  outline: 1px solid #008AB8;
+}
+
+.products__link {
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+}
+
+.products__button {
+  display: none;
+}
+
+.description {
+  background: #ede1c7 url(../img/description-bg.png);
+  color: #323232;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  padding: 0 19px;
+  border: 1px solid transparent;
+
+  outline: 1px solid #A3E496;
+}
+
+.description__info:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.description__title {
+  margin-top: 27px;
+  margin-bottom: 9px;
+  font-size: 24px;
+  line-height:30px;
+
+  outline: 1px solid #A3E496;
+}
+
+.description__item {
+  float: left;
+  position: relative;
+  width: 483px;
+  margin-right: 26px;
+  padding-left: 57px;
+
+  outline: 1px solid #A3E496;
+}
+
+.description__item:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 49px;
+  height: 49px;
+}
+
+.description__item_type_production:before {
+  background: url(../img/icecream-icon.svg) no-repeat;
+}
+
+.description__item_type_ingredients:before {
+  background: url(../img/cow-icon.svg) no-repeat;
+}
+
+.description__item_type_supplements:before {
+  background: url(../img/leaf-icon.svg) no-repeat;
+}
+
+.description__item_type_delivery:before {
+  background: url(../img/thermometer-icon.svg) no-repeat;
+}
+
+.description__item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.description__text {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.info {
+  margin-bottom: 40px;
+
+  outline: 1px solid #CC6699;
+}
+
+.info:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.info__item {
+  min-height: 220px;
+  border-radius: 12px;
+
+  outline: 1px solid #CC6699;
+}
+
+.blog {
+  float: left;
+  width: 540px;
+  margin-right: 26px;
+  padding-left: 20px;
+  background: #fff url(../img/info-item-1-bg.jpg) no-repeat;
+  color: #323232;
+}
+
+.blog__title {
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 10px;
+
+  outline: 1px solid #CC6699;
+}
+
+.blog__link {
+  display: block;
+  width: 285px;
+  color: #323232;
+  font-size:24px;
+  line-height: 30px;
+
+  outline: 1px solid #CC6699;
+}
+
+.subscription {
+  float: right;
+  width: 506px;
+  padding: 0 27px;
+  background: #fff url(../img/info-item-2-bg.png) no-repeat;
+  color: #5a5a5a;
+}
+
+.subscription__text {
+  margin-top: 35px;
+  font-size: 16px;
+  line-height: 22px;
+
+  outline: 1px solid #CC6699;
+}
+
+.subscription__input {
+  margin-right: 11px;
+
+  outline: 1px solid #CC6699;
+}
+
+.subscription__button {
+  outline: 1px solid #CC6699;
+}
+
+.location {
+  position: relative;
+
+  outline: 1px solid #ABCDEF;
+}
+
+.map {
+  position: relative;
+  left: -27px;
+
+  outline: 1px solid #ABCDEF;
+}
+
+.contacts {
+  position: absolute;
+  top: 64px;
+  right: 27px;
+  width: 252px;
+  min-height: 304px;
+  padding: 0 25px;
+  background-color: #fff;
+  color: #323232;
+  border-radius: 12px;
+
+  outline: 1px solid #ABCDEF;
+}
+
+.contacts__address {
+  margin-top: 27px;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 20px;
+
+  outline: 1px solid #ABCDEF;
+}
+
+.contacts__street {
+  display: block;
+  margin-bottom: 19px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+
+  outline: 1px solid #ABCDEF;
+}
+
+.contacts__phone {
+  margin-bottom: 20px;
+
+  outline: 1px solid #ABCDEF;
+}
+
+.contacts__phone-link {
+  display: block;
+  margin-top: 7px;
+  margin-bottom: 4px;
+
+  outline: 1px solid #ABCDEF;
+}
+
+.contacts__button {
+  outline: 1px solid #ABCDEF;
+}
+
+

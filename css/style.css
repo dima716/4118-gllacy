@@ -1,6 +1,7 @@
 body {
+  padding: 0;
+  margin: 0;
   font-size: 16px;
-  font-weight: 700;
   line-height: 1.25;
   color: #fff;
   font-family: Tahoma, sans-serif;
@@ -25,4 +26,74 @@ body {
 .title_level_ternary {
   font-weight: 500;
   line-height: 22px;
+}
+
+.container {
+  width: 1146px;
+  padding: 0 27px;
+  margin: 0 auto;
+
+  outline: 1px dotted #279B61;
+}
+
+.container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* HEADER */
+.logo {
+  float: left;
+  position: relative;
+  left: -5px;
+  width: 153px;
+  margin-right: 20px;
+
+  outline: 1px dotted #3F5D7D;
+}
+
+.main-navigation {
+  float: left;
+  width: 676px;
+  margin-right: 26px;
+
+  outline: 1px dotted #3F5D7D;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  outline: 1px dotted #3F5D7D;
+}
+
+.sub-menu,
+.search__form,
+.login__form,
+.order {
+  display: none;
+}
+
+.menu__item {
+  display: inline-block;
+  margin-right: 28px;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.user-block {
+  float: right;
+  width: 267px;
+
+  outline: 1px dotted #3F5D7D;
+}
+
+.search,
+.login,
+.cart {
+  display: inline-block;
 }

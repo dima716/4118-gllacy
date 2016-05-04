@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header class="main-header">
+  <body class="catalog-page">
+    <header class="main-header catalog-page__main-header">
       <div class="container">
         <div class="logo">
           <a class="logo__link" href="index.html">
@@ -91,10 +92,10 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="header-contacts">
-          <span class="header-contacts__time">C <time datetime="10:00">10</time> до <time datetime="20:00">20</time>, ежедневно</span>
-          <a class="header-contacts__phone" href="tel:+78124592525">8 812 450-25-25</a>
+          <div class="header-contacts">
+            <span class="header-contacts__time">C <time datetime="10:00">10</time> до <time datetime="20:00">20</time>, ежедневно</span>
+            <a class="header-contacts__phone" href="tel:+78124592525">8 812 450-25-25</a>
+          </div>
         </div>
       </div>
     </header>
@@ -103,83 +104,87 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
           <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог</a></li>
-          <li class="breadcrumbs__item breadcrumbs__item_active"><a href="#" class="breadcrumbs__link">Сливочное</a></li>
+          <li class="breadcrumbs__item breadcrumbs__item_active"><a class="breadcrumbs__link">Сливочное</a></li>
         </ul>
         <h1 class="title title_level_secondary title__catalog-content">Сливочное мороженое</h1>
         <div class="filters">
           <form class="filters-form" action="#" method="get">
-            <div class="filters__item sort-filter">
-              <span class="sort-filter__title filters__title">Сортировка:</span>
-              <div class="filters__inner">
-                <select class="select" name="sort-filter">
-                  <option value="popularity">по популярности</option>
-                  <option value="popularity">по популярности</option>
-                  <option value="popularity">по популярности</option>
-                </select>
+            <div class="filters__row">
+              <div class="filters__item sort-filter">
+                <span class="sort-filter__title filters__title">Сортировка:</span>
+                <div class="filters__inner">
+                  <select class="select" name="sort-filter">
+                    <option value="popularity">по популярности</option>
+                    <option value="popularity">по популярности</option>
+                    <option value="popularity">по популярности</option>
+                  </select>
+                </div>
               </div>
-            </div>
-            <div class="filters__item range-filter">
-              <div class="range-filter__title filters__title">
-                Цена:
-                <input class="range-filter__input range-filter__input_type_from" type="text" name="price-from" value="100 руб."> -
-                <input class="range-filter__input range-filter__input_type_to" type="text" name="price-to" value="500 руб.">
+              <div class="filters__item range-filter">
+                <div class="range-filter__title filters__title">
+                  Цена:
+                  <input class="range-filter__input range-filter__input_type_from" type="text" name="price-from" value="100 руб."> -
+                  <input class="range-filter__input range-filter__input_type_to" type="text" name="price-to" value="500 руб.">
+                </div>
+                <div class="filters__inner">
+                  <div class="range">
+                    <div class="range__line">
+                      <div class="range__lever range__lever_type_left"></div>
+                      <div class="range__lever range__lever_type_right"></div>
+                    </div>
+                 </div>
+                </div>
               </div>
-              <div class="filters__inner">
-                <div class="range">
-                  <div class="range__line">
-                    <div class="range__lever range__lever_type_left"></div>
-                    <div class="range__lever range__lever_type_right"></div>
+              <div class="filters__item radio-filter">
+                <span class="radio-filter__title filters__title">Жирность:</span>
+                <div class="filters__inner">
+                  <div class="radio-filter__item">
+                    <input class="radio-filter__input" type="radio" name="Fat" value="0" id="fat-0">
+                    <label class="radio-filter__label" for="fat-0">0%</label>
                   </div>
-               </div>
-              </div>
-            </div>
-            <div class="filters__item radio-filter">
-              <span class="radio-filter__title filters__title">Жирность:</span>
-              <div class="filters__inner">
-                <div class="radio-filter__item">
-                  <input class="radio-filter__input" type="radio" name="Fat" value="0" id="fat-0">
-                  <label class="radio-filter__label" for="fat-0">0%</label>
-                </div>
-                <div class="radio-filter__item">
-                  <input class="radio-filter__input" type="radio" name="Fat" value="before-10" id="fat-before-10" checked>
-                  <label class="radio-filter__label" for="fat-before-10">до 10%</label>
-                </div>
-                <div class="radio-filter__item">
-                  <input class="radio-filter__input" type="radio" name="Fat" value="before-30" id="fat-before-30">
-                  <label class="radio-filter__label" for="fat-before-30">до 30%</label>
-                </div>
-                <div class="radio-filter__item">
-                  <input class="radio-filter__input" type="radio" name="Fat" value="after-30" id="fat-after-30">
-                  <label class="radio-filter__label" for="fat-after-30">выше 30%</label>
+                  <div class="radio-filter__item">
+                    <input class="radio-filter__input" type="radio" name="Fat" value="before-10" id="fat-before-10" checked>
+                    <label class="radio-filter__label" for="fat-before-10">до 10%</label>
+                  </div>
+                  <div class="radio-filter__item">
+                    <input class="radio-filter__input" type="radio" name="Fat" value="before-30" id="fat-before-30">
+                    <label class="radio-filter__label" for="fat-before-30">до 30%</label>
+                  </div>
+                  <div class="radio-filter__item">
+                    <input class="radio-filter__input" type="radio" name="Fat" value="after-30" id="fat-after-30">
+                    <label class="radio-filter__label" for="fat-after-30">выше 30%</label>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="filters__item checkbox-filter">
-              <span class="checkbox-filter__title filters__title">Наполнители:</span>
-              <div class="filters__inner">
-                <div class="checkbox-filter__item">
-                  <input class="checkbox-filter__input" type="checkbox" name="chocolate" id="chocolate" checked>
-                  <label class="checkbox-filter__label" for="chocolate">шоколадные</label>
-                </div>
-                <div class="checkbox-filter__item">
-                  <input class="checkbox-filter__input" type="checkbox" name="sugar-topping" id="sugar-topping" checked>
-                  <label class="checkbox-filter__label" for="sugar-topping">сахарные присыпки</label>
-                </div>
-                <div class="checkbox-filter__item">
-                  <input class="checkbox-filter__input" type="checkbox" name="fruits" id="fruits">
-                  <label class="checkbox-filter__label" for="fruits">фрукты</label>
-                </div>
-                <div class="checkbox-filter__item">
-                  <input class="checkbox-filter__input" type="checkbox" name="syrups" id="syrups">
-                  <label class="checkbox-filter__label" for="syrups">сиропы</label>
-                </div>
-                <div class="checkbox-filter__item">
-                  <input class="checkbox-filter__input" type="checkbox" name="jams" id="jams">
-                  <label class="checkbox-filter__label" for="jams">джемы</label>
+            <div class="filters__row">
+              <div class="filters__item checkbox-filter">
+                <span class="checkbox-filter__title filters__title">Наполнители:</span>
+                <div class="filters__inner">
+                  <div class="checkbox-filter__item">
+                    <input class="checkbox-filter__input" type="checkbox" name="chocolate" id="chocolate" checked>
+                    <label class="checkbox-filter__label" for="chocolate">шоколадные</label>
+                  </div>
+                  <div class="checkbox-filter__item">
+                    <input class="checkbox-filter__input" type="checkbox" name="sugar-topping" id="sugar-topping" checked>
+                    <label class="checkbox-filter__label" for="sugar-topping">сахарные присыпки</label>
+                  </div>
+                  <div class="checkbox-filter__item">
+                    <input class="checkbox-filter__input" type="checkbox" name="fruits" id="fruits">
+                    <label class="checkbox-filter__label" for="fruits">фрукты</label>
+                  </div>
+                  <div class="checkbox-filter__item">
+                    <input class="checkbox-filter__input" type="checkbox" name="syrups" id="syrups">
+                    <label class="checkbox-filter__label" for="syrups">сиропы</label>
+                  </div>
+                  <div class="checkbox-filter__item">
+                    <input class="checkbox-filter__input" type="checkbox" name="jams" id="jams">
+                    <label class="checkbox-filter__label" for="jams">джемы</label>
+                  </div>
                 </div>
               </div>
+              <button class="button button_style_secondary button__filters-form filters__item">Применить</button>
             </div>
-            <button class="button button_style_secondary button__filters-form">Применить</button>
           </form>
         </div>
         <div class="products">
@@ -376,16 +381,16 @@
            <a class="button button_style_primary products__button" href="#">Быстрый просмотр</a>
          </div>
         </div>
-        <div class="paginator">
+        <div class="paginator catalog-content__paginator">
          <ul class="paginator__list">
-           <li class="paginator__item"><a class="paginator__link paginator__link_active" href="#">1</a></li>
+           <li class="paginator__item paginator__item_active"><a class="paginator__link">1</a></li>
            <li class="paginator__item"><a class="paginator__link" href="#">2</a></li>
            <li class="paginator__item"><a class="paginator__link" href="#">3</a></li>
            <li class="paginator__item"><a class="paginator__link" href="#">4</a></li>
-           <li class="paginator__item"><a class="paginator__link" href="#">4</a></li>
+           <li class="paginator__item"><a class="paginator__link" href="#">5</a></li>
          </ul>
-         <a class="paginator__button paginator__button_type_previous" href="#">предыдущая страница</a>
-         <a class="paginator__button paginator__button_type_next" href="#">следующая страница</a>
+         <a class="paginator__button paginator__button_type_previous" href="#">&lt;</a>
+         <a class="paginator__button paginator__button_type_next" href="#">&gt;</a>
         </div>
       </div>
     </main>

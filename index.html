@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="index-page">
     <header class="main-header">
       <div class="container">
         <div class="logo">
@@ -89,12 +90,12 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="header-contacts">
-          <span class="header-contacts__time">
-            C <time datetime="10:00">10</time> до <time datetime="20:00">20</time>, ежедневно
-          </span>
-          <a class="header-contacts__phone" href="tel:+78124592525">8 812 450-25-25</a>
+          <div class="header-contacts">
+            <span class="header-contacts__time">
+              C <time datetime="10:00">10</time> до <time datetime="20:00">20</time>, ежедневно
+            </span>
+            <a class="header-contacts__phone" href="tel:+78124592525">8 812 450-25-25</a>
+          </div>
         </div>
       </div>
     </header>
@@ -102,7 +103,7 @@
       <div class="container">
         <div class="slider">
           <ul class="slider__list">
-            <li class="slider__item">
+            <li class="slider__item slider__item_active">
               <img class="slider__image" src="img/slider-item.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
               <h1 class="title title_level_primary slider__title">Крем-брюле и пломбир с малиновым джемом</h1>
               <a class="button button_style_primary slider__button" href="#">Давайте оба!</a>
@@ -129,8 +130,6 @@
             <div class="promo__image-wrapper">
               <img class="promo__image"
                    src="img/promo-item-1.jpg"
-                   width="560"
-                   height="229"
                    alt="Малинка даром!">
             </div>
             <p class="promo__text">
@@ -138,14 +137,14 @@
               При покупке 2 кг любого фруктового мороженого,
               добавим в ваш заказ банку малинового варенья бесплатно.
             </p>
-            <a class="button button_style_primary button__promo" href="#">Хочу варенье!</a>
+            <div class="promo__actions">
+              <a class="button button_style_primary button__promo" href="#">Хочу варенье!</a>
+            </div>
           </div>
           <div class="promo__item">
             <div class="promo__image-wrapper">
               <img class="promo__image"
                    src="img/promo-item-2.jpg"
-                   width="560"
-                   height="229"
                    alt="Шоколадки даром!">
             </div>
             <p class="promo__text">
@@ -153,7 +152,9 @@
               При покупке 2 кг пломбира, добавим в ваш заказ упаковку
               вкуснейшей шоколадной присыпки совершенно бесплатно.
             </p>
-            <a class="button button_style_primary button__promo" href="#">Хочу шоколадки!</a>
+            <div class="promo__actions">
+              <a class="button button_style_primary button__promo" href="#">Хочу шоколадки!</a>
+            </div>
           </div>
         </div>
         <div class="products">
@@ -211,13 +212,12 @@
           <div class="products__item">
             <span class="products__mark">хит</span>
             <div class="products__image-wrapper">
-
+              <img class="products__image"
+                   src="img/catalog-item-4.jpg"
+                   width="267"
+                   height="267"
+                   alt="Сливочное крем-брюле с карамельной подливкой">
             </div>
-            <img class="products__image"
-                 src="img/catalog-item-4.jpg"
-                 width="267"
-                 height="267"
-                 alt="Сливочное крем-брюле с карамельной подливкой">
             <div class="products__price">
               <span class="products__price-number">415 &#8381;</span>/кг
             </div>
@@ -232,29 +232,31 @@
               Магазин Глейси  — это онлайн и офлайн магазин по продаже
               мороженого собственного производства на развес
           </h3>
-          <div class="description__item description__item_type_production">
-            <p class="description__text">
-              Все наше мороженое изготавливается на собственном производстве,
-              с использованием современного оборудования и проверенных временем технологий.
-            </p>
-          </div>
-          <div class="description__item description__item_type_ingredients">
-            <p class="description__text">
-              Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний,
-              с которыми нас связывает долговременное сотрудничество.
-            </p>
-          </div>
-          <div class="description__item description__item_type_supplements">
-            <p class="description__text">
-              Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
-              Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-            </p>
-          </div>
-          <div class="description__item description__item_type_delivery">
-            <p class="description__text">
-              Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
-              который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.
-            </p>
+          <div class="description__info">
+            <div class="description__item description__item_type_production">
+              <p class="description__text">
+                Все наше мороженое изготавливается на собственном производстве,
+                с использованием современного оборудования и проверенных временем технологий.
+              </p>
+            </div>
+            <div class="description__item description__item_type_ingredients">
+              <p class="description__text">
+                Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний,
+                с которыми нас связывает долговременное сотрудничество.
+              </p>
+            </div>
+            <div class="description__item description__item_type_supplements">
+              <p class="description__text">
+                Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
+                Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+              </p>
+            </div>
+            <div class="description__item description__item_type_delivery">
+              <p class="description__text">
+                Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
+                который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.
+              </p>
+            </div>
           </div>
         </div>
         <div class="info">
@@ -269,7 +271,7 @@
                 Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
               </p>
               <input class="subscription__input" type="email" name="email" placeholder="Электронная почта">
-              <button class="button button_style_primary button__subscription" type="submit">Отправить</button>
+              <button class="button button_style_primary subscription__button" type="submit">Отправить</button>
             </form>
           </div>
         </div>
@@ -285,7 +287,7 @@
               <a class="contacts__phone-link" href="tel:+78124502525">8 812 450-25-25</a>
               <span class="contacts__time">(c <time datetime="10:00">10</time> до <time datetime="20:00">20</time>, ежедневно)</span>
             </p>
-            <a class="button button_style_primary button__contacts" href="#">Форма обратной связи</a>
+            <a class="button button_style_primary contacts__button" href="#">Форма обратной связи</a>
           </div>
         </div>
       </div>

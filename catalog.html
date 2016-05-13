@@ -16,11 +16,11 @@
         </div>
         <nav class="main-navigation">
           <ul class="menu">
-            <li class="menu__item">
-              <a class="menu__link menu__link_active" href="#">Каталог</a>
+            <li class="menu__item menu__item_active">
+              <a class="menu__link" href="#">Каталог</a>
               <ul class="sub-menu">
-                <li class="sub-menu__item"><a class="sub-menu__link sub-menu__link_type_new" href="#">Новинки</a></li>
-                <li class="sub-menu__item"><a class="sub-menu__link" href="catalog.html">Сливочное</a></li>
+                <li class="sub-menu__item sub-menu__item_type_new"><a class="sub-menu__link" href="#">Новинки</a></li>
+                <li class="sub-menu__item sub-menu__item_active"><a class="sub-menu__link">Сливочное</a></li>
                 <li class="sub-menu__item"><a class="sub-menu__link" href="#">Щербеты</a></li>
                 <li class="sub-menu__item"><a class="sub-menu__link" href="#">Фруктовый лед</a></li>
                 <li class="sub-menu__item"><a class="sub-menu__link" href="#">Мелорин</a></li>
@@ -38,18 +38,18 @@
           <div class="search">
             <a class="button button_type_search button_style_secondary" href="#">поиск</a>
             <form class="search__form" action="#" method="get">
-              <input class="search__input" type="search" name="search">
+              <input class="input search__input" type="search" name="search" placeholder="Что ищем?">
             </form>
           </div>
           <div class="login">
-            <a class="button button_type_login button_style_secondary" href="#">вход</a>
+            <a class="button button_type_entry button_style_secondary" href="#">вход</a>
             <form class="login__form" action="#" method="post">
-              <input class="login__input" type="email" placeholder="Электронная почта">
-              <input class="login__input" type="password" placeholder="Пароль">
-              <button class="button button_style_primary" type="submit">Войти</button>
+              <input class="input login__input" type="email" placeholder="Электронная почта">
+              <input class="input login__input" type="password" placeholder="Пароль">
+              <button class="button button_style_primary login__button" type="submit">Войти</button>
               <div class="login__actions">
-                <a class="login__link" href="#">Забыли пароль?</a>
-                <a class="login__link" href="#">Новая регистрация</a>
+                <a class="link link_style_secondary login__link" href="#">Забыли пароль?</a>
+                <a class="link link_style_secondary login__link" href="#">Новая регистрация</a>
               </div>
             </form>
           </div>
@@ -67,7 +67,7 @@
                   <td class="order-table__cell order__title">Пломбир с апельсиновым мороженым</td>
                   <td class="order-table__cell order__amount">
                     1,5 кг &times;
-                    <span class="order__price order__price_style_amount">200 руб.</span>
+                    <span class="order__amount-price">200 руб.</span>
                   </td>
                   <td class="order-table__cell order__price">300 руб.</td>
                 </tr>
@@ -81,7 +81,7 @@
                   <td class="order-table__cell order__title">Клубничный пломбир с присыпкой из белого шоколада</td>
                   <td class="order-table__cell order__amount">
                     1,5 кг &times;
-                    <span class="order__price">300 руб.</span>
+                    <span class="order__amount-price">300 руб.</span>
                   </td>
                   <td class="order-table__cell order__price">450 руб.</td>
                 </tr>
@@ -398,10 +398,10 @@
       <div class="container">
         <section class="social">
           <ul class="social-buttons">
-            <li class="social-buttons__item"><a class="social-buttons__link social-buttons__link_type_twitter" href="#">twitter</a></li>
-            <li class="social-buttons__item"><a class="social-buttons__link social-buttons__link_type_instagram" href="#">instagram</a></li>
-            <li class="social-buttons__item"><a class="social-buttons__link social-buttons__link_type_facebook" href="#">facebook</a></li>
-            <li class="social-buttons__item"><a class="social-buttons__link social-buttons__link_type_vk" href="#">vk</a></li>
+            <li class="social-buttons__item"><a class="social-buttons__link social-buttons__link_type_twitter" href="#"></a></li>
+            <li class="social-buttons__item"><a class="social-buttons__link social-buttons__link_type_instagram" href="#"></a></li>
+            <li class="social-buttons__item"><a class="social-buttons__link social-buttons__link_type_facebook" href="#"></a></li>
+            <li class="social-buttons__item"><a class="social-buttons__link social-buttons__link_type_vk" href="#"></a></li>
           </ul>
         </section>
         <section class="footer-menu">

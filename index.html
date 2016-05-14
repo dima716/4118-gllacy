@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="index-page">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Глейси</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="index-page">
+  <input class="slider-radio" type="radio" name="toggle" id="btn-1" checked>
+  <input class="slider-radio" type="radio" name="toggle" id="btn-2">
+  <input class="slider-radio" type="radio" name="toggle" id="btn-3">
+  <div class="site-wrapper">
     <header class="main-header">
       <div class="container">
         <div class="logo">
@@ -17,7 +21,7 @@
             <li class="menu__item">
               <a class="menu__link" href="#">Каталог</a>
               <ul class="sub-menu">
-                <li class="sub-menu__item"><a class="sub-menu__link sub-menu__link_type_new" href="#">Новинки</a></li>
+                <li class="sub-menu__item sub-menu__item_type_new"><a class="sub-menu__link" href="#">Новинки</a></li>
                 <li class="sub-menu__item"><a class="sub-menu__link" href="catalog.html">Сливочное</a></li>
                 <li class="sub-menu__item"><a class="sub-menu__link" href="#">Щербеты</a></li>
                 <li class="sub-menu__item"><a class="sub-menu__link" href="#">Фруктовый лед</a></li>
@@ -36,18 +40,31 @@
           <div class="search">
             <a class="button button_type_search button_style_secondary" href="#">поиск</a>
             <form class="search__form" action="#" method="get">
-              <input class="search__input" type="search" name="search">
+              <div class="row search__row">
+                <input class="input search__input" type="text" name="search" placeholder="Что ищем?" required>
+                <label class="label">Что ищем?</label>
+              </div>
             </form>
           </div>
           <div class="login">
-            <a class="button button_type_login button_style_secondary" href="#">вход</a>
+            <a class="button button_type_entry button_style_secondary" href="#">Вход</a>
             <form class="login__form" action="#" method="post">
-              <input class="login__input" type="email" placeholder="Электронная почта">
-              <input class="login__input" type="password" placeholder="Пароль">
-              <button class="button button_style_primary" type="submit">Войти</button>
+              <div class="row login__row">
+                <input class="input login__input" type="text" placeholder="Электронная почта" required>
+                <label class="label">Электронная почта</label>
+              </div>
+              <div class="row login__row">
+                <input class="input login__input" type="password" placeholder="Пароль" required>
+                <label class="label">Пароль</label>
+              </div>
+              <button class="button button_style_primary login__button" type="submit">Войти</button>
               <div class="login__actions">
-                <a class="login__link" href="#">Забыли пароль?</a>
-                <a class="login__link" href="#">Новая регистрация</a>
+                <div class="login__link-wrapper">
+                  <a class="link link_style_secondary login__link" href="#">Забыли пароль?</a>
+                </div>
+                <div class="login__link-wrapper">
+                  <a class="link link_style_secondary login__link" href="#">Новая регистрация</a>
+                </div>
               </div>
             </form>
           </div>
@@ -59,13 +76,15 @@
                   <td class="order-table__cell">
                     <button class="order__delete" type="button">&times;</button>
                   </td>
-                  <td class="order-table__cell order__image-wrapper">
-                    <img class="order__image" src="img/catalog-item-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым мороженым">
+                  <td class="order-table__cell">
+                    <div class="order__image-wrapper">
+                      <img class="order__image" src="img/catalog-item-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым мороженым">
+                    </div>
                   </td>
                   <td class="order-table__cell order__title">Пломбир с апельсиновым мороженым</td>
                   <td class="order-table__cell order__amount">
                     1,5 кг &times;
-                    <span class="order__price order__price_style_amount">200 руб.</span>
+                    <span class="order__amount-price">200 руб.</span>
                   </td>
                   <td class="order-table__cell order__price">300 руб.</td>
                 </tr>
@@ -73,13 +92,15 @@
                   <td class="order-table__cell">
                     <button class="order__delete" type="button">&times;</button>
                   </td>
-                  <td class="order-table__cell order__image-wrapper">
-                    <img class="order__image" src="img/catalog-item-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                  <td class="order-table__cell">
+                    <div class="order__image-wrapper">
+                      <img class="order__image" src="img/catalog-item-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                    </div>
                   </td>
-                  <td class="order-table__cell order__title">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="order-table__cell order__title">Клубничный пломбир с присыпкой <br> из белого шоколада</td>
                   <td class="order-table__cell order__amount">
                     1,5 кг &times;
-                    <span class="order__price">300 руб.</span>
+                    <span class="order__amount-price">300 руб.</span>
                   </td>
                   <td class="order-table__cell order__price">450 руб.</td>
                 </tr>
@@ -103,35 +124,27 @@
       <div class="container">
         <div class="slider">
           <ul class="slider__list">
-            <li class="slider__item slider__item_active">
-              <img class="slider__image" src="img/slider-item.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
+            <li class="slider__item" id="slide1">
               <h1 class="title title_level_primary slider__title">Крем-брюле и пломбир с малиновым джемом</h1>
               <a class="button button_style_primary slider__button" href="#">Давайте оба!</a>
             </li>
-            <li class="slider__item">
-              <img class="slider__image" src="img/slider-item.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
-              <h1 class="title title_level_primary slider__title">Крем-брюле и пломбир с малиновым джемом</h1>
+            <li class="slider__item" id="slide2">
+              <h1 class="title title_level_primary slider__title">Шоколадный пломбир и лимонный сорбет</h1>
               <a class="button button_style_primary slider__button" href="#">Давайте оба!</a>
             </li>
-            <li class="slider__item">
-              <img class="slider__image" src="img/slider-item.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
-              <h1 class="title title_level_primary slider__title">Крем-брюле и пломбир с малиновым джемом</h1>
+            <li class="slider__item" id="slide3">
+              <h1 class="title title_level_primary slider__title">Пломбир с помадкой и клубничный щербет</h1>
               <a class="button button_style_primary slider__button" href="#">Давайте оба!</a>
             </li>
           </ul>
-          <div class="slider-boolets">
-            <a class="slider-boolets__item slider-boolets__item_active" href="#">1</a>
-            <a class="slider-boolets__item" href="#">2</a>
-            <a class="slider-boolets__item" href="#">3</a>
+          <div class="slider-controls">
+            <label class="slider-controls__item" for="btn-1"></label>
+            <label class="slider-controls__item" for="btn-2"></label>
+            <label class="slider-controls__item" for="btn-3"></label>
           </div>
         </div>
         <div class="promo">
-          <div class="promo__item">
-            <div class="promo__image-wrapper">
-              <img class="promo__image"
-                   src="img/promo-item-1.jpg"
-                   alt="Малинка даром!">
-            </div>
+          <div class="promo__item promo__item_type_raspberry">
             <p class="promo__text">
               <b class="title title_level_secondary promo__slogan">Малинка даром</b>
               При покупке 2 кг любого фруктового мороженого,
@@ -141,12 +154,7 @@
               <a class="button button_style_primary button__promo" href="#">Хочу варенье!</a>
             </div>
           </div>
-          <div class="promo__item">
-            <div class="promo__image-wrapper">
-              <img class="promo__image"
-                   src="img/promo-item-2.jpg"
-                   alt="Шоколадки даром!">
-            </div>
+          <div class="promo__item promo__item_type_chocolate">
             <p class="promo__text">
               <b class="title title_level_secondary promo__slogan">Шоколадки даром!</b>
               При покупке 2 кг пломбира, добавим в ваш заказ упаковку
@@ -157,80 +165,76 @@
             </div>
           </div>
         </div>
-        <div class="products">
+        <div class="products products_type_hits">
           <div class="products__item">
             <span class="products__mark">хит</span>
             <div class="products__image-wrapper">
               <img class="products__image"
-                   src="img/catalog-item-1.jpg"
-                   width="267"
-                   height="267"
-                   alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              src="img/catalog-item-1.jpg"
+              width="267"
+              height="267"
+              alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             </div>
             <div class="products__price">
-              <span class="products__price-number">310 &#8381;</span>/кг
+              <span class="products__price-number">310</span>/кг
             </div>
             <h2 class="title title_level_ternary products__title">
-              <a class="products__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              <a class="link link_style_primary products__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </h2>
-            <a class="button button_style_primary products__button" href="#">Быстрый просмотр</a>
           </div>
           <div class="products__item">
             <span class="products__mark">хит</span>
             <div class="products__image-wrapper">
               <img class="products__image"
-                   src="img/catalog-item-2.jpg"
-                   width="267"
-                   height="267"
-                   alt="Сливочно-кофейное с кусочками шоколада">
+              src="img/catalog-item-2.jpg"
+              width="267"
+              height="267"
+              alt="Сливочно-кофейное с кусочками шоколада">
             </div>
             <div class="products__price">
-              <span class="products__price-number">380 &#8381;</span>/кг
+              <span class="products__price-number">380</span>/кг
             </div>
             <h2 class="title title_level_ternary products__title">
-              <a class="products__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
+              <a class="link link_style_primary products__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
             </h2>
-            <a class="button button_style_primary products__button" href="#">Быстрый просмотр</a>
           </div>
           <div class="products__item">
             <span class="products__mark">хит</span>
             <div class="products__image-wrapper">
               <img class="products__image"
-                   src="img/catalog-item-3.jpg"
-                   width="267"
-                   height="267"
-                   alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              src="img/catalog-item-3.jpg"
+              width="267"
+              height="267"
+              alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </div>
             <div class="products__price">
-              <span class="products__price-number">355 &#8381;</span>/кг
+              <span class="products__price-number">355</span>/кг
             </div>
             <h2 class="title title_level_ternary products__title">
-              <a class="products__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+              <a class="link link_style_primary products__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </h2>
-            <a class="button button_style_primary products__button" href="#">Быстрый просмотр</a>
           </div>
           <div class="products__item">
             <span class="products__mark">хит</span>
             <div class="products__image-wrapper">
               <img class="products__image"
-                   src="img/catalog-item-4.jpg"
-                   width="267"
-                   height="267"
-                   alt="Сливочное крем-брюле с карамельной подливкой">
+              src="img/catalog-item-4.jpg"
+              width="267"
+              height="267"
+              alt="Сливочное крем-брюле с карамельной подливкой">
             </div>
             <div class="products__price">
-              <span class="products__price-number">415 &#8381;</span>/кг
+              <span class="products__price-number">415</span>/кг
             </div>
             <h2 class="title title_level_ternary products__title">
-              <a class="products__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+              <a class="link link_style_primary products__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
             </h2>
-            <a class="button button_style_primary products__button" href="#">Быстрый просмотр</a>
           </div>
         </div>
         <div class="description">
           <h3 class="description__title">
-              Магазин Глейси  — это онлайн и офлайн магазин по продаже
-              мороженого собственного производства на развес
+            Магазин Глейси  — это онлайн и офлайн магазин по продаже
+            мороженого собственного производства на развес
           </h3>
           <div class="description__info">
             <div class="description__item description__item_type_production">
@@ -270,7 +274,10 @@
                 Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
                 Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
               </p>
-              <input class="subscription__input" type="email" name="email" placeholder="Электронная почта">
+              <div class="row info__row">
+                <input class="input subscription__input" type="text" name="email" placeholder="Электронная почта" required>
+                <label class="label">Электронная почта</label>
+              </div>
               <button class="button button_style_primary subscription__button" type="submit">Отправить</button>
             </form>
           </div>
@@ -279,7 +286,7 @@
           <img class="map" src="img/map.jpg" width="1200" height="430" alt="Карта">
           <div class="contacts">
             <p class="contacts__address">
-              Адрес главного офиса и офлайн магазина
+              Адрес главного офиса и <br> офлайн магазина:
               <span class="contacts__street">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
             </p>
             <p class="contacts__phone">
@@ -296,37 +303,61 @@
       <div class="container">
         <section class="social">
           <ul class="social-buttons">
-            <li class="social-buttons__item"><a class="social-buttons__link social-buttons__link_type_twitter" href="#">twitter</a></li>
-            <li class="social-buttons__item"><a class="social-buttons__link social-buttons__link_type_instagram" href="#">instagram</a></li>
-            <li class="social-buttons__item"><a class="social-buttons__link social-buttons__link_type_facebook" href="#">facebook</a></li>
-            <li class="social-buttons__item"><a class="social-buttons__link social-buttons__link_type_vk" href="#">vk</a></li>
+            <li class="social-buttons__item">
+              <a class="social-buttons__link social-buttons__link_type_twitter" href="#"></a>
+            </li>
+            <li class="social-buttons__item">
+              <a class="social-buttons__link social-buttons__link_type_instagram" href="#"></a>
+            </li>
+            <li class="social-buttons__item">
+              <a class="social-buttons__link social-buttons__link_type_facebook" href="#"></a>
+            </li>
+            <li class="social-buttons__item">
+              <a class="social-buttons__link social-buttons__link_type_vk" href="#"></a>
+            </li>
           </ul>
         </section>
         <section class="footer-menu">
           <ul class="footer-menu__list">
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Для поставщиков</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Наши документы</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">О производстве</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Экологические стандарты</a></li>
+            <li class="footer-menu__item footer-menu__item_type_suppliers"><a class="link link_style_primary footer-menu__link" href="#">Для поставщиков</a></li>
+            <li class="footer-menu__item"><a class="link link_style_primary footer-menu__link" href="#">О производстве</a></li>
+          </ul>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item"><a class="link link_style_primary footer-menu__link" href="#">Наши документы</a></li>
+            <li class="footer-menu__item"><a class="link link_style_primary footer-menu__link" href="#">Экологические стандарты</a></li>
           </ul>
         </section>
         <section class="copyright">
-          <a class="copyright__logo" href="https://htmlacademy.ru">
-            <img class="copyright__logo-image" src="img/copyright-logo.svg" width="108" height="36" alt="HTML Academy">
-          </a>
-          <div class="copyright__text">Сделано в <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a> &copy; 2016</div>
+          <div class="copyright__inner">
+            <a class="copyright__logo" href="https://htmlacademy.ru">
+              <img class="copyright__logo-image" src="img/copyright-logo.svg" width="108" height="36" alt="HTML Academy">
+            </a>
+            <div class="copyright__text">Сделано в <a class="link link_style_primary copyright__link" href="https://htmlacademy.ru/">HTML Academy</a> &copy; 2016</div>
+          </div>
         </section>
       </div>
     </footer>
-    <div class="feedback-modal">
-      <form class="feedback-form" action="#" method="post">
-        <span class="feedback-form__title">Мы обязательно вам ответим!</span>
-        <span class="feedback-form__close-button">&times;</span>
-        <input type="text" class="feedback-form__input" name="client-name" placeholder="Как вас зовут?">
-        <input type="email" class="feedback-form__input" name="client-email" placeholder="Ваша почта для ответа?">
+  </div>
+  <div class="feedback-modal">
+    <form class="feedback-form" action="#" method="post">
+      <span class="feedback-form__title">Мы обязательно вам ответим!</span>
+      <button class="feedback-form__close-button" type="button">&times;</button>
+      <div class="row feedback-form__row">
+        <input class="input feedback-form__input" type="text" name="client-name" placeholder="Как вас зовут?" required>
+        <label class="label">Как вас зовут?</label>
+      </div>
+      <div class="row feedback-form__row">
+        <input class="input feedback-form__input" type="text" name="client-email" placeholder="Ваша почта для ответа?" required>
+        <label class="label">Ваша почта для ответа?</label>
+      </div>
+      <div class="row feedback-form__row">
         <textarea class="feedback-form__message" name="client-message" placeholder="Напишите что - нибудь..."></textarea>
+      </div>
+      <div class="feedback-form__button-wrapper">
         <button class="button button_style_primary button__feedback-form" type="submit">Отправить</button>
-      </form>
-    </div>
-  </body>
+      </div>
+    </form>
+  </div>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
 </html>

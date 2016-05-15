@@ -1195,6 +1195,9 @@ body {
 
 .map {
   margin-left : -27px;
+  border: 0;
+  width: 1200px;
+  height: 430px;
 }
 
 .contacts {

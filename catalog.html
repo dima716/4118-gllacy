@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="catalog-page">
     <header class="main-header catalog-page__main-header">
@@ -39,21 +39,21 @@
             <a class="button button_type_search button_style_secondary" href="#">поиск</a>
             <form class="search__form" action="#" method="get">
               <div class="row search__row">
-                <input class="input search__input" type="text" name="search" placeholder="Что ищем?" required>
-                <label class="label">Что ищем?</label>
+                <input class="input search__input" type="text" name="search" placeholder="Что ищем?" id="search" required>
+                <label class="label" for="search">Что ищем?</label>
               </div>
             </form>
           </div>
           <div class="login">
-            <a class="button button_type_entry button_style_secondary" href="#">вход</a>
+            <a class="button button_type_entry button_style_secondary" href="#">Вход</a>
             <form class="login__form" action="#" method="post">
               <div class="row login__row">
-                <input class="input login__input" type="text" placeholder="Электронная почта" required>
-                <label class="label">Электронная почта</label>
+                <input class="input login__input" type="text" placeholder="Электронная почта" id="login" required>
+                <label class="label" for="login">Электронная почта</label>
               </div>
               <div class="row login__row">
-                <input class="input login__input" type="password" placeholder="Пароль" required>
-                <label class="label">Пароль</label>
+                <input class="input login__input" type="password" placeholder="Пароль" id="password" required>
+                <label class="label" for="password">Пароль</label>
               </div>
               <button class="button button_style_primary login__button" type="submit">Войти</button>
               <div class="login__actions">

@@ -62,6 +62,7 @@ body {
   width : 1146px;
   margin : 0 auto;
   padding : 0 27px;
+  padding-right : 12px;
 }
 
 .container:after {
@@ -349,7 +350,7 @@ body {
   display : block;
   padding : 9px 13px;
 
-  font-weight : 700;
+  font-weight : 500;
   font-size : 16px;
   line-height : 18px;
   color : #ffffff;
@@ -882,7 +883,7 @@ body {
 .promo__text {
   margin-bottom : 46px;
 
-  font-weight : 700;
+  font-weight : 500;
   font-size : 18px;
 }
 
@@ -981,6 +982,7 @@ body {
 }
 
 .products__price-number {
+  font-weight : 500;
   font-size : 45px;
   line-height : 45px;
 }
@@ -1042,6 +1044,7 @@ body {
   margin-top : 22px;
   margin-bottom : 9px;
 
+  font-weight : 500;
   font-size : 24px;
   line-height : 30px;
 }
@@ -1145,6 +1148,7 @@ body {
   display : block;
   width : 285px;
 
+  font-weight : 500;
   font-size : 24px;
   line-height : 30px;
   color : #323232;
@@ -1194,16 +1198,16 @@ body {
 }
 
 .map {
-  margin-left : -27px;
-  border: 0;
-  width: 1200px;
-  height: 430px;
+  width : 100%;
+  height : 430px;
+
+  border : 0;
 }
 
 .contacts {
   position : absolute;
   top : 64px;
-  right : -3px;
+  right : 27px;
   z-index : 1;
 
   width : 252px;
@@ -1314,6 +1318,8 @@ body {
 .title__catalog-content {
   margin-top : 0;
   margin-bottom : 19px;
+
+  font-weight : 500;
 }
 
 .filters {
@@ -1345,7 +1351,6 @@ body {
   display : inline-block;
   margin-right : 11px;
 
-  font-weight : 500;
   font-size : 16px;
   line-height : 18px;
   vertical-align : middle;
@@ -1368,10 +1373,9 @@ body {
   padding-right : 50px;
   padding-left : 17px;
 
-  font-weight : 500;
   color : #ffffff;
   text-indent : 0.01px;
-  text-overflow : "";
+  text-overflow : " ";
 
   background : transparent;
   border : none;

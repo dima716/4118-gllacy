@@ -59,6 +59,8 @@ body {
 }
 
 .container {
+  position : relative;
+
   width : 1146px;
   margin : 0 auto;
   padding : 0 27px;
@@ -1206,8 +1208,8 @@ body {
 
 .contacts {
   position : absolute;
-  top : 64px;
-  right : 27px;
+  right : 12px;
+  bottom : -364px;
   z-index : 1;
 
   width : 252px;
